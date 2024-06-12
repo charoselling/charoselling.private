@@ -249,7 +249,7 @@ setlocal EnableDelayedExpansion
 
 cls
 color 07
-title  %titlename% 𝓦𝓲𝓷𝓭𝓸𝔀𝓼 𝓐𝓬𝓽𝓲𝓿𝓪𝓽𝓸𝓻
+title  %titlename% Windows Activator
 mode 76, 30
 
 echo:
