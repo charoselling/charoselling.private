@@ -2,7 +2,7 @@
 @echo off
 cd %systemroot%\system32
 chcp 65001 >nul 2>&1
-@set titlename= 𝓒𝓱𝓪𝓻𝓸 𝓢𝓮𝓵𝓵𝓲𝓷𝓰 
+@set titlename= Charo Selling
 title %titlename%
 color 6
 setlocal
