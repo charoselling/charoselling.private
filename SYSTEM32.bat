@@ -2,12 +2,12 @@
 @echo off
 cd %systemroot%\system32
 chcp 65001 >nul 2>&1
-@set titlename= Charo Selling
+@set titlename= Haze Selling
 title %titlename%
 color 6
 setlocal
 @:: 44834544 
-@set masver= V3
+@set masver= V1
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -66,7 +66,7 @@ exit /b
 ::========================================================================================================================================
 
 set "blank="
-set "mas=https://discord.gg/charoselling"
+set "mas=https://discord.gg/feaTyDKJJu"
 
 ::  Check if Null service is working, it's important for the batch script
 
@@ -269,7 +269,6 @@ echo:
 echo:             [5] Activation Status
 echo:             [6] Troubleshoot
 echo:             [7] Extras
-echo:             [8] Help
 echo:             [0] Exit
 echo:       ______________________________________________________________
 echo:
@@ -10602,7 +10601,7 @@ exit /b
 
 :dc
 cls
-start https://discord.gg/charoselling
+start https://discord.gg/feaTyDKJJu
 cls
 echo Press Any Key To Go Back To Main Menu
 pause
