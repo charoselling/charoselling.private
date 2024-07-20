@@ -6038,6 +6038,23 @@ AlmenuT:add_button("to Bunker Plan Screen", function()
         tpfac()
     end
 end)
+
+
+AlmenuT:add_sameline()
+
+AlmenuT:add_button("to Orbital Cannon Room", function()
+    local PlayerPos = ENTITY.GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(PLAYER.PLAYER_PED_ID(), 0.0, 0.52, 0.0)
+    local intr = INTERIOR.GET_INTERIOR_AT_COORDS(PlayerPos.x, PlayerPos.y, PlayerPos.z)
+    if intr == 269313 then 
+        if HUD.DOES_BLIP_EXIST(HUD.GET_FIRST_BLIP_INFO_ID(428)) then
+            -- Koordinaten innerhalb des Orbital Cannon Raums
+            PED.SET_PED_COORDS_KEEP_VEHICLE(PLAYER.PLAYER_PED_ID(), 336.0, 4834.0, -59.0)
+        end
+    else
+        gui.show_message("make sure you are in the facility","Please enter the facility before teleporting to the orbital cannon room")
+        tpfac()
+    end
+end)
 -------------------------------------
 
 
@@ -6612,13 +6629,6 @@ AlmenuS:add_button("Reset 2 player", function()
 	end)
 end)
 
-AlmenuCredits = Almenu:add_tab("Credits")
-
-Yimura = AlmenuCredits:add_tab("Yimura")
-Yimura:add_text("Yim Menu Cheat creator")
-Yimura:add_text("Cheat on GitHub:")
-Yimura:add_text("https://github.com/YimMenu/YimMenu")
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -6629,10 +6639,8 @@ CreditsMenu = L7NEG:add_tab("Credits")
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Yimura = CreditsMenu:add_tab("Yimura")
-Yimura:add_text("Yim Menu Cheat Developer")
-Yimura:add_text("Cheat on GitHub:")
-Yimura:add_text("https://github.com/YimMenu/YimMenu")
+Yimura = CreditsMenu:add_tab("LucasAbi69")
+Yimura:add_text("Cheat Developer")
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
